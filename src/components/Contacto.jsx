@@ -30,14 +30,14 @@ function Contacto({ contactoRef, nombreRef }) {
 
   // Enviar con EmailJS usando send
   emailjs.send(
-    'service_s8wdunu',       // tu service ID
-    'template_mbik1at',      // tu template ID
+    'service_s8wdunu',
+    'template_mbik1at',
     {
-      from_name: nombre,
-      from_email: email,
-      message: mensaje
+      nombre: nombre,
+      email: email,
+      mensaje: mensaje
     },
-    'LXiqjZ2pzbVUh7Ggo'     // tu public key
+    'LXiqjZ2pzbVUh7Ggo'
   ).then(
     (result) => {
       setExitoMensaje("Mensaje enviado con éxito!");

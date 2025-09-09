@@ -18,7 +18,6 @@ function Contacto({ contactoRef, nombreRef }) {
   const handleSubmit = (e) => {
   e.preventDefault();
 
-  // verificamos que todos los campos estén completos
   const nombre = nombreRef.current.value.trim();
   const email = emailRef.current.value.trim();
   const mensaje = mensajeRef.current.value.trim();
@@ -29,17 +28,24 @@ function Contacto({ contactoRef, nombreRef }) {
     return;
   }
 
-  // enviar formulario con EmailJS
-  emailjs.sendForm(
-    'service_s8wdunu',      // reemplazá con tu Service ID
-    'template_mbik1at',     // reemplazá con tu Template ID
-    e.target,
-    'LXiqjZ2pzbVUh7Ggo'       // reemplazá con tu Public Key
+  // Enviar con EmailJS usando send
+  emailjs.send(
+    'service_s8wdunu',       // tu service ID
+    'template_mbik1at',      // tu template ID
+    {
+      from_name: nombre,
+      from_email: email,
+      message: mensaje
+    },
+    'LXiqjZ2pzbVUh7Ggo'     // tu public key
   ).then(
     (result) => {
       setExitoMensaje("Mensaje enviado con éxito!");
       setTipoMensaje("exito");
-      e.target.reset();
+      // Limpiar inputs manualmente
+      nombreRef.current.value = "";
+      emailRef.current.value = "";
+      mensajeRef.current.value = "";
       setTimeout(() => setExitoMensaje(""), 3000);
     },
     (error) => {
@@ -48,6 +54,7 @@ function Contacto({ contactoRef, nombreRef }) {
     }
   );
 };
+
 
 
   return (

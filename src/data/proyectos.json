@@ -1,12 +1,13 @@
 [
   {
+    "titulo": "Mi Portfolio",
+    "descripcion": "Código fuente de este portfolio, incluyendo todos los componentes y proyectos integrados.",
+    "link": "https://github.com/gabrielnbr89/portfolio"
+  },
+  {
     "titulo": "Curso REACT JS & REST",
     "descripcion": "Proyecto personal como parte de un curso de REACT JS.",
     "link": "https://github.com/gabrielnbr89/curso/tree/master/alcuidado"
-  },
-  {
-    "titulo": "Pequeñas apps en JavaScript",
-    "descripcion": "Ejercicios y prácticas usando funciones, arrays y DOM."
   },
   {
     "titulo": "Proyectos en C y Java",

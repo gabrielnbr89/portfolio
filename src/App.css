@@ -1,0 +1,421 @@
+/* ====== Variables de color y espaciado ====== */
+:root {
+  --color-bg: #1e1e1e;         /* Fondo oscuro general */
+  --color-bg-alt: #242424;     /* Fondo alternativo para secciones */
+  --color-primary: #61dafb;    /* Azul de acento */
+  --color-text: #f0f0f0;       /* Texto principal */
+  --color-text-light: #ccc;    /* Texto secundario */
+  --color-card-bg: #2a2a2a;    /* Fondo de tarjetas */
+  --spacing-section: 3rem;     /* Padding de secciones */
+  --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ====== RESET GLOBAL ====== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden; /* evita scroll horizontal */
+  font-family: var(--font-primary);
+  line-height: 1.6;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* ====== Holder ====== */
+.holder {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-left: 220px; /* deja espacio a la izquierda */
+  padding: 2rem; /* espacio lateral */
+  box-sizing: border-box;
+}
+
+/* ====== Títulos ====== */
+h1, h2, h3 {
+  color: var(--color-primary);
+  margin-bottom: 0.5em;
+}
+
+/* ====== Secciones ====== */
+section {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* ====== Botones ====== */
+.btn {
+  background: var(--color-primary);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background: #005ea0;
+}
+
+/* ====== Sección Presentación ====== */
+.presentacion {
+  background-color: var(--color-card-bg);
+  color: var(--color-text);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.presentacion h1 {
+  font-size: clamp(1.6rem, 2.5vw, 2.5rem);
+}
+
+.presentacion p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+/* ====== Sección Habilidades ====== */
+.habilidades {
+  background-color: var(--color-bg-alt);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.habilidades h2 {
+  margin-bottom: 1.5rem;
+}
+
+.habilidades-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+
+.habilidad-card {
+  flex: 1 1 160px;
+  max-width: 200px;
+  background-color: var(--color-card-bg);
+  color: var(--color-text);
+  padding: 0.8rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.35);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.habilidad-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 14px rgba(0,0,0,0.5);
+}
+
+.habilidad-card h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--color-primary);
+  letter-spacing: 0.5px;
+}
+
+.habilidad-lenguajes {
+  background-color: #3a8fb7; /* azul suave, más oscuro que el primary */
+  color: var(--color-text);
+}
+
+.habilidad-herramientas {
+  background-color: #b87a3a; /* naranja suave, menos intenso */
+  color: var(--color-text);
+}
+
+.habilidad-soft-skills {
+  background-color: #4caf50; /* verde apagado, más integrado */
+  color: var(--color-text);
+}
+
+/* ====== Sección Proyectos ====== */
+.proyectos {
+  background-color: var(--color-bg);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.proyectos h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.proyectos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.proyecto-card {
+  flex: 1 1 280px;
+  max-width: 320px;
+  background-color: var(--color-card-bg);
+  color: var(--color-text);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.5);
+}
+
+.proyecto-card h3 {
+  margin-top: 0;
+}
+
+.proyecto-card p {
+  color: var(--color-text-light);
+}
+
+.proyecto-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+/* ====== Sección Contacto ====== */
+.contacto {
+  background-color: var(--color-card-bg);
+  text-align: center;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+.contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contacto p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.contacto a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.contacto a:hover {
+  text-decoration: underline;
+}
+
+
+/* ====== Formulario de Contacto ====== */
+.formulairioContacto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.formulairioContacto label {
+  font-weight: bold;
+  color: var(--color-text-light);
+  margin-bottom: 0.3rem;
+}
+
+.formulairioContacto input,
+.formulairioContacto textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: var(--color-bg-alt);
+  color: var(--color-text);
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formulairioContacto input:focus,
+.formulairioContacto textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 6px rgba(97, 218, 251, 0.6);
+  outline: none;
+}
+
+.formulairioContacto textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.formulairioContacto .btn {
+  align-self: flex-start;
+}
+
+.form-message {
+  min-height: 2rem; /* reserva espacio fijo */
+  font-size: 0.95rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-message.exito {
+  color: greenyellow;
+}
+
+.form-message.error {
+  color: red;
+}
+
+
+/* ====== Footer ======*/
+
+footer {
+  background-color: var(--color-card-bg);
+  color: var(--color-text);
+  text-align: center;
+  padding: 1.5rem 0.3rem;
+}
+
+footer a {
+  color: var(--color-primary);
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer svg {
+  vertical-align: middle;
+}
+
+/* ====== Sidebar base ====== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: var(--color-card-bg);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+.sidebar-logo {
+  width: 100px;
+  height: 120px;
+  border-radius: 40%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+
+.sidebar .nav-links {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar .nav-links li a {
+  display: block;
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.sidebar .nav-links li a.active {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  font-weight: bold;
+}
+
+
+.sidebar .nav-links li a:hover {
+  background-color: #444;
+}
+
+
+/* ====== MEDIA QUERIES ====== */
+@media (max-width: 768px) {
+  .holder {
+    padding: 2rem 4rem;
+  }
+
+  .proyecto-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .habilidad-card {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+
+  .proyecto-card-link{
+    width: 100%;
+  }
+
+.sidebar {
+    left: -220px; /* oculta sidebar */
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .holder {
+    margin-left: 0; /* no hay sidebar visible */
+  }
+
+  .menu-toggle {
+    position: fixed;
+    top: 2rem;
+    left: 1rem;
+    background: var(--color-card-bg);
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .habilidad-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: 250px;
+  }
+
+  .presentacion h1 {
+    font-size: 1.6rem;
+  }
+
+  .presentacion p {
+    font-size: 1rem;
+  }
+}

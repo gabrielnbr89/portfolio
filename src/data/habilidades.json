@@ -1,0 +1,19 @@
+[
+  { "nombre": "HTML", "categoria": "lenguajes", "icono": "FaHtml5" },
+  { "nombre": "CSS", "categoria": "lenguajes", "icono": "FaCss3Alt" },
+  { "nombre": "JavaScript", "categoria": "lenguajes", "icono": "FaJs" },
+  { "nombre": "React", "categoria": "lenguajes", "icono": "FaReact" },
+  { "nombre": "Bootstrap", "categoria": "lenguajes", "icono": "FaBootstrap" },
+  { "nombre": "C", "categoria": "lenguajes", "icono": "SiC" },
+  { "nombre": "Express", "categoria": "lenguajes", "icono": "SiExpress" },
+  { "nombre": "uC / IoT", "categoria": "lenguajes", "icono": "FaMicrochip" },
+  { "nombre": "Linux avanzado", "categoria": "herramientas", "icono": "FaLinux" },
+  { "nombre": "Raspberry Pi", "categoria": "herramientas", "icono": "SiRaspberrypi" },
+  { "nombre": "Node.js", "categoria": "herramientas", "icono": "FaNodeJs" },
+  { "nombre": "Línea de comandos", "categoria": "herramientas", "icono": "FaTerminal" },
+  { "nombre": "Autodidacta", "categoria": "soft-skills", "icono": "FaBook" },
+  { "nombre": "Trabajo en equipo", "categoria": "soft-skills", "icono": "FaUsers" },
+  { "nombre": "Resolución de problemas", "categoria": "soft-skills", "icono": "FaLightbulb" },
+  { "nombre": "Aprendizaje rápido", "categoria": "soft-skills", "icono": "FaRocket" },
+  { "nombre": "Creatividad", "categoria": "soft-skills", "icono": "FaPalette" }
+]

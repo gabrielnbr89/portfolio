@@ -31,7 +31,7 @@ function Contacto({ contactoRef, nombreRef }) {
   // Enviar con EmailJS usando send
   emailjs.send(
     'service_s8wdunu',
-    'template_mbik1at',
+    'template_eyishs7',
     {
       nombre: nombre,
       email: email,

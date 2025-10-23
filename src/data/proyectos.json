@@ -5,12 +5,12 @@
     "link": "https://github.com/gabrielnbr89/portfolio"
   },
   {
-    "titulo": "Curso REACT JS & REST",
-    "descripcion": "Proyecto personal como parte de un curso de REACT JS.",
-    "link": "https://github.com/gabrielnbr89/curso/tree/master/alcuidado"
+    "titulo": "Curso - Programación web full Stack",
+    "descripcion": "App desarrollada en curso Full Stack con React JS y Express.",
+    "link": "https://github.com/gabrielnbr89/alcuidado"
   },
   {
-    "titulo": "Proyectos en C y Java",
-    "descripcion": "Programación de microcontroladores y ejercicios académicos."
+    "titulo": "ACE - Analizador de Consumo Energético",
+    "descripcion": "Es un proyecto universitaro diseñado para funcionar en Raspberry Pi y que combina diferentes tecnologías convirtiendose en un proyecto ToT."
   }
 ]

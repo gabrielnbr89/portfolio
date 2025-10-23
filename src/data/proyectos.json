@@ -11,6 +11,7 @@
   },
   {
     "titulo": "ACE - Analizador de Consumo Energético",
-    "descripcion": "Es un proyecto universitaro diseñado para funcionar en Raspberry Pi y que combina diferentes tecnologías convirtiendose en un proyecto ToT."
+    "descripcion": "Es un proyecto universitaro diseñado para funcionar en Raspberry Pi y que combina diferentes tecnologías convirtiendose en un proyecto ToT.",
+    "link": "https://github.com/gabrielnbr89/ACE"
   }
 ]
